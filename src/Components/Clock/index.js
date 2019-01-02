@@ -110,7 +110,7 @@ class Clock extends Component {
     });
     results.splice(0, 2);
     results.splice(6, 1);
-    results.splice(14, 1);
+    results.splice(13, 1);
     let updatePayload = {};
     for(let i = 0; i < results.length; i++) {
       updatePayload[`${lightNames[i]}Lit`] = results[i];
@@ -119,6 +119,7 @@ class Clock extends Component {
   }
 
   render() {
+    // coded and designed by Aarick Farist
     return (
       <div className="clockContainer">
         <div className="pairing">
@@ -137,7 +138,7 @@ class Clock extends Component {
           <div className="circleHouse">
             <div id="m11" className={ this.state.m11Lit ? "circle lightUp" : "circle" }></div>
             <div id="m12" className={ this.state.m12Lit ? "circle lightUp" : "circle" }></div>
-            <div id="m14"className={ this.state.m14Lit ? "circle lightUp" : "circle" }></div>
+            <div id="m14" className={ this.state.m14Lit ? "circle lightUp" : "circle" }></div>
           </div>
           <div className="circleHouse">
             <div id="m21" className={ this.state.m21Lit ? "circle lightUp" : "circle" }></div>
